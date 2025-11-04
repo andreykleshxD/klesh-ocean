@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey Klesh Wales - Киты</title>
+    <style>
+        /* --- Стили для сине-голубой темы (встроены в HTML) --- */
+        :root {
+            --main-bg-color: #e0f2f7; /* Очень светло-голубой фон */
+            --header-footer-bg: #81d4fa; /* Средний голубой для шапки/подвала */
+            --accent-color: #2196f3; /* Яркий синий для ссылок/кнопок */
+            --text-color: #263238; /* Темно-серый для текста */
+            --border-color: #b3e5fc; /* Светло-голубой для границ */
+            --fact-bg-color: #c5e1a5; /* Нежный зеленый для фактов, чтобы выделить */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Чтобы футер был внизу */
+        }
+
+        header {
+            background-color: var(--header-footer-bg);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: var(--accent-color);
+        }
+
+        main {
+            flex: 1; /* Чтобы основное содержимое занимало все доступное пространство */
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+
+
+        button {
+            display: block;
+            margin: 1.5rem auto;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+
+        button:hover {
+            background-color: #1976d2; /* Чуть темнее акцентного */
+            transform: translateY(-2px);
+        }
+
+        .hidden-fact {
+            display: none; /* Скрываем факт по умолчанию */
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: var(--fact-bg-color);
+            border: 1px solid var(--accent-color);
+            border-radius: 5px;
+            text-align: center;
+            font-style: italic;
+            color: #33691e; /* Темно-зеленый для факта */
+        }
+
+        footer {
+            background-color: var(--header-footer-bg);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto; /* Прижимает футер к низу */
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .animal-image {
+            width: 80%; /* Картинка занимает всю ширину контейнера */
+            max-height: 300px; /* Максимальная высота картинки */
+            object-fit: cover; /* Картинка масштабируется и обрезается, чтобы заполнить пространство */
+            border-radius: 8px; /* Скруглим углы */
+            margin-bottom: 1rem; /* Добавим отступ снизу */
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Andrey Klesh Ocean</h1>
+        <nav>
+            <a href="index.html" class="active">Киты</a>
+            <a href="sharks.html">Акулы</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Все о китах</h2>
+        <p>Киты — это крупнейшие млекопитающие на Земле, обитающие в Мировом океане. Несмотря на то, что они живут в воде и внешне напоминают рыб, киты являются теплокровными животными, дышат легкими, рожают живых детенышей и кормят их молоком. Это удивительные создания, которые поражают своим размером, интеллектом и способностью адаптироваться к жизни в морских глубинах.</p>
+        <p>Существует два основных подотряда китов: усатые киты (Mysticeti) и зубатые киты (Odontoceti). Усатые киты, к которым относятся синие киты и горбатые киты, имеют китовый ус во рту, с помощью которого они фильтруют планктон и мелкую рыбу из воды. Зубатые киты, такие как дельфины, косатки и кашалоты, имеют зубы и являются хищниками, охотящимися на рыбу, кальмаров и других морских животных.</p>
+        <p>Синий кит является самым крупным животным, когда-либо жившим на Земле. Его длина может достигать 30 метров, а вес — более 150 тонн. Киты играют важную роль в морских экосистемах, помогая поддерживать баланс численности других видов и циркуляцию питательных веществ в океане. К сожалению, многие виды китов находятся под угрозой исчезновения из-за коммерческой охоты и загрязнения океанов.</p>
+        
+        <div class="image-placeholder">
+            <img src="whale.jpg" alt="Описание изображения" class="animal-image">
+
+
+
+
+
+        </div>
+
+        <button id="factBtn">Узнать интересный факт о китах</button>
+        <p id="factText" class="hidden-fact"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2077  ooo Andrey Klesh sea</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const factButton = document.getElementById('factBtn');
+    const factText = document.getElementById('factText');
+
+    if (factButton && factText) {
+        // Определяем, какая страница открыта, по заголовку
+        let fact = "";
+        if (document.title.includes("Киты")) {
+            fact = "Интересный факт о китах: Синий кит — это не только самое большое животное в мире, но и самое громкое. Его призывы могут достигать 188 децибел, что громче реактивного самолета!";
+        } else if (document.title.includes("Акулы")) {
+            fact = "Интересный факт об акулах: Большая белая акула может прожить до 70 лет, что делает её одной из самых долгоживущих хрящевых рыб.";
+        }
+        
+        factText.textContent = fact; // Устанавливаем текст факта
+
+        factButton.addEventListener('click', () => {
+            // Переключаем видимость факта
+            if (factText.classList.contains('hidden-fact')) {
+                factText.classList.remove('hidden-fact');
+                factButton.textContent = "Скрыть факт";
+            } else {
+                factText.classList.add('hidden-fact');
+                factButton.textContent = "Узнать интересный факт" + (document.title.includes("Киты") ? " о китах" : " об акулах");
+            }
+        });
+    }
+});
